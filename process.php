@@ -17,7 +17,7 @@
     if (! (isset($_POST['last_name']) && !empty($_POST['last_name']))){
         $error_fields[] = "last_name";
     }
-    if (! (isset($_POST['phone_no']) &&  !is_int($_POST['phone_no']))){
+    if (! (isset($_POST['phone_no']) &&  !is_int($_POST['phone_no']) && !empty($_POST['phone_no']))){
         $error_fields[] = "phone_no";
     }
     if (! (isset($_POST['email']) && filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL ))){
@@ -34,7 +34,7 @@
     //=======================================================================
     //=======================Open The Connection=============================
     //=======================================================================
-    $conn = mysqli_connect("localhost", "alaa", "", "blog");
+    $conn = mysqli_connect("localhost", "alaa", "iti", "blog");
     if(! $conn){
         mysqli_connect_error($conn);
         exit;

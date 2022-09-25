@@ -140,7 +140,6 @@
                 <!--Terms and Conditions------>
 
 
-
                 <!---Submit Button------>
                 <div class="box" style="background: #2d3e3f">
                     <input type="Submit" name="Submit" class="submit" value="SUBMIT">

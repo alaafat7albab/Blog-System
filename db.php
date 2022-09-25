@@ -2,7 +2,7 @@
     //======================================================================
     //====================Open The Connection===============================
     //======================================================================
-    $conn = mysqli_connect('localhost', 'alaa', '', 'blog');
+    $conn = mysqli_connect('localhost', 'alaa', 'iti', 'blog');
     if(!$conn){
         mysqli_connect_error();
         exit;
