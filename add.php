@@ -33,13 +33,13 @@
             }
 
             //=============Escape special characters to avoid sql injection=================
-            $firstName = mysqli_escape_string($conn, $_POST['first_name']);
-            $lastName = mysqli_escape_string($conn, $_POST['last_name']);
-            $phoneNo = mysqli_escape_string($conn, $_POST['phone_no']);
-            $email = mysqli_escape_string($conn, $_POST['email']);
-            $password = mysqli_escape_string($conn, $_POST['password']);
-            $gender = $_POST['gender'];
-            $admin = $_POST['admin'];
+            $firstName  =   mysqli_escape_string($conn, $_POST['first_name']);
+            $lastName   =   mysqli_escape_string($conn, $_POST['last_name']);
+            $phoneNo    =   mysqli_escape_string($conn, $_POST['phone_no']);
+            $email      =   mysqli_escape_string($conn, $_POST['email']);
+            $password   =   mysqli_escape_string($conn, $_POST['password']);
+            $gender     =   $_POST['gender'];
+            $admin      =   $_POST['admin'];
 
             //===========================Insertion===========================================
             $query = "INSERT INTO `users`  (`first_name`, `last_name`, `phone_no`, `email`, `password`, `gender`, `admin`) 
@@ -48,7 +48,7 @@
                 header("Location: allUsers.php ");
                 exit;
             } else {
-                mysqli_errno($conn);
+                echo mysqli_errno($conn);
             }
             //=============================Close Connection===========================
             mysqli_close($conn);
@@ -65,7 +65,7 @@
     </head>
     <body>
         <div class="container">
-            <form method="post">
+            <form method="post" enctype="multipart/form-data">
                 <!--First name-->
                 <div class="box">
                     <label for="firstName" class="fl fontLabel"> First Name: </label>
@@ -183,6 +183,12 @@
                     </label> admin
                 </div>
                 <!---admin--->
+
+                <!---Avatar--->
+                <div class="box" style="background: #2d3e3f">
+                    <input type="file" name="avatar", id="avatar">
+                </div>
+                <!---Avatar--->
 
                 <!---Submit Button------>
                 <div class="box" style="background: #2d3e3f">

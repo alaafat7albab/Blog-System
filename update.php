@@ -59,7 +59,7 @@
                 header("Location: allUsers.php");
                 exit;
             }else{
-                mysqli_error($conn);
+                echo mysqli_error($conn);
             }
         }
     }

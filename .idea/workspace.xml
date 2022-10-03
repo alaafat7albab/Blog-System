@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="915e14da-d581-436d-8afa-0c1dd354e878" name="Changes" comment="Update User">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/allUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/update.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663768097224</updated>
       <workItem from="1663768098441" duration="46562000" />
-      <workItem from="1664599159201" duration="8768000" />
+      <workItem from="1664599159201" duration="13803000" />
     </task>
     <task id="LOCAL-00001" summary="Form">
       <created>1663866484742</created>
@@ -112,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664104822549</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update User">
+      <created>1664616924353</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664616924353</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
